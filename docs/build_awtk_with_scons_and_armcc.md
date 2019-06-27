@@ -40,7 +40,7 @@ env = DefaultEnvironment();
 SCons.Tool.Tool('armcc')(env)
 ```
 
-使用 scons 编译，编译正常了，但是在 armar 生成。a 文件时，出现下面的错误：
+使用 scons 编译，编译正常了，但是在 armar 生成.a 文件时，出现下面的错误：
 
 ```
 The command line is too long.
