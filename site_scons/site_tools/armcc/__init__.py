@@ -81,10 +81,12 @@ def generate(env):
     armcc = SCons.Tool.find_program_path(env, 'armcc.exe');
     armar = SCons.Tool.find_program_path(env, 'armar.exe');
     armlink = SCons.Tool.find_program_path(env, 'armlink.exe');
+    armasm = SCons.Tool.find_program_path(env, 'armasm.exe');
 
     env['CC']      = armcc
     env['CXX']     = armcc
     env['AR']      = armar
+    env['AS']      = armasm
     env['LINK']      = armlink
     env['CXXCOM']    = '$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES'
     env['ARFLAGS']     = SCons.Util.CLVar('--create -r')
