@@ -68,4 +68,6 @@ os.environ['INPUT_ENGINE'] = INPUT_ENGINE;
 os.environ['NANOVG_BACKEND'] = NANOVG_BACKEND;
 os.environ['TK_3RD_ROOT'] = TK_3RD_ROOT;
 os.environ['GTEST_ROOT'] = GTEST_ROOT;
-
+os.environ['TOOLS_NAME'] = '';
+os.environ['NATIVE_WINDOW'] = 'raw';
+os.environ['GRAPHIC_BUFFER'] = 'default';
